@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- GOOGLE FONT -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+            rel="stylesheet">
+
+    <!-- CSS -->
+        <link rel="stylesheet" href="style.css">
+
+        <title>Memory Bloom</title>
+    </head>
+
+    <body>
+
+        <main>
+
+        <!-- START SCREEN -->
+
+            <div id="startScreen">
+
+                <div class="menu-card">
+
+                    <h1>  Memory Bloom 🌸 </h1>
+
+                    <p>
+                        Train your memory with calm and focus.
+                    </p>
+
+                    <button type="button" id="startBtn">
+                        START
+                    </button>
+
+                    <div class="difficulty-container">
+
+                        <button
+                            type="button"
+                            class="level"
+                            data-level="easy">
+
+                            Easy
+
+                        </button>
+
+                        <button
+                            type="button"
+                            class="level"
+                            data-level="medium">
+
+                            Medium
+
+                        </button>
+
+                        <button
+                            type="button"
+                            class="level"
+                            data-level="hard">
+
+                            Hard
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        <!-- TITLE -->
+
+            <section class="title">
+
+                <h1>Memory Bloom</h1>
+
+                <p>
+                    Train your mind with calm and simple memory exercises.
+                </p>
+
+            </section>
+
+        <!-- GAME INFO -->
+
+            <section class="game-info">
+
+                <p>
+                    Best Time:
+                    <span id="bestTime">--</span>
+                </p>
+
+                <p>
+                    Best Moves:
+                    <span id="bestMoves">--</span>
+                </p>
+
+                <p>
+                    Moves:
+                    <span id="moves">0</span>
+                </p>
+
+                <p>
+                    Time:
+                    <span id="timer">0</span>s
+                </p>
+
+            </section>
+
+        <!-- MEMORY GRID -->
+
+            <section class="grid"></section>
+
+        <!-- WIN SCREEN -->
+
+            <div id="winScreen" class="hidden">
+                <div class="win-card">
+
+                    <h2>✨ You Win! ✨</h2>
+
+                    <p id="winMessage">
+                        You completed the game.
+                    </p>
+
+                    <button type="button" id="playAgain">
+                        Play Again
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+        <!-- RESTART BUTTON -->
+
+            <button type="button" id="restart">
+                Restart Game
+            </button>
+
+        </main>
+
+        <script src="script.js"></script>
+
+    </body>
+
+</html>
